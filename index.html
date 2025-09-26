@@ -1,0 +1,176 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Parth Patel — Portfolio</title>
+  <meta name="description" content="Portfolio of Parth Patel — Web Developer & Student. Projects, skills and contact." />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
+  <style>
+    :root{
+      --bg:#0f1724; --card:#0b1220; --accent:#06b6d4; --muted:#9aa7b2; --glass: rgba(255,255,255,0.03);
+      --max-width:1000px;
+      color-scheme: dark;
+    }
+    *{box-sizing:border-box}
+    html,body{height:100%;margin:0;background:linear-gradient(180deg,#071022 0%, #071827 100%);font-family:Inter,system-ui,-apple-system,Segoe UI,Roboto,'Helvetica Neue',Arial;color:#e6eef3}
+    .container{max-width:var(--max-width);margin:36px auto;padding:28px}
+    header{display:flex;align-items:center;justify-content:space-between;gap:16px}
+    .brand{display:flex;align-items:center;gap:12px}
+    .avatar{width:56px;height:56px;border-radius:12px;background:linear-gradient(135deg,var(--accent),#7c3aed);display:flex;align-items:center;justify-content:center;font-weight:700}
+    nav a{color:var(--muted);text-decoration:none;margin-left:18px;font-weight:600}
+    .hero{display:flex;gap:28px;align-items:center;margin-top:28px}
+    .intro{flex:1}
+    h1{margin:0;font-size:2rem}
+    p.lead{color:var(--muted);margin-top:8px;line-height:1.5}
+    .cta{margin-top:16px;display:flex;gap:12px}
+    .btn{background:var(--accent);border:none;padding:10px 14px;border-radius:10px;color:#042027;cursor:pointer;font-weight:700}
+    .outline{background:transparent;border:1px solid rgba(255,255,255,0.06);padding:10px 14px;border-radius:10px;color:var(--muted);cursor:pointer}
+    .grid{display:grid;grid-template-columns:1fr 340px;gap:24px;margin-top:32px}
+    .card{background:linear-gradient(180deg, rgba(255,255,255,0.02), rgba(255,255,255,0.01));padding:18px;border-radius:12px;box-shadow:0 6px 20px rgba(2,6,23,0.6)}
+    .projects .project{padding:14px;border-radius:10px;margin-bottom:12px;background:var(--glass)}
+    .skills{display:flex;flex-wrap:wrap;gap:10px}
+    .skill{padding:8px 10px;border-radius:8px;background:rgba(255,255,255,0.03);color:var(--muted);font-weight:600}
+    .right .small{color:var(--muted);font-size:0.9rem}
+    footer{margin-top:28px;text-align:center;color:var(--muted);font-size:0.9rem}
+    .links{display:flex;gap:12px;margin-top:12px}
+    a.icon{display:inline-flex;align-items:center;gap:8px;padding:8px 10px;border-radius:8px;background:rgba(255,255,255,0.02);color:var(--muted);text-decoration:none}
+    .projects h3{margin-top:0}
+    @media (max-width:880px){
+      .grid{grid-template-columns:1fr;}
+      .hero{flex-direction:column;align-items:flex-start}
+      nav a{margin-left:10px}
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <header>
+      <div class="brand">
+        <div class="avatar">PP</div>
+        <div>
+          <div style="font-weight:700">Parth Patel</div>
+          <div style="font-size:0.85rem;color:var(--muted)">Web Developer • React • MERN Enthusiast</div>
+        </div>
+      </div>
+      <nav>
+        <a href="#about">About</a>
+        <a href="#projects">Projects</a>
+        <a href="#skills">Skills</a>
+        <a href="#contact">Contact</a>
+      </nav>
+    </header>
+
+    <section class="hero">
+      <div class="intro">
+        <h1>Hi — I'm Parth. I build web apps and learn full‑stack development.</h1>
+        <p class="lead">I focus on React, the MERN stack and clean, accessible UI. I enjoy turning ideas into fast, maintainable products with attention to UX and performance.</p>
+        <div class="cta">
+          <a class="btn" href="#projects">See projects</a>
+          <a class="outline" href="#contact">Get in touch</a>
+        </div>
+      </div>
+      <div style="min-width:260px" class="card right">
+        <div style="display:flex;justify-content:space-between;align-items:center">
+          <div>
+            <div style="font-weight:700">Contact</div>
+            <div class="small">Based in India • Open to internships</div>
+          </div>
+          <div style="text-align:right">
+            <div style="font-weight:700">20</div>
+            <div class="small">Years old</div>
+          </div>
+        </div>
+
+        <div style="margin-top:12px">
+          <div style="font-weight:700">Quick links</div>
+          <div class="links">
+            <a class="icon" href="#">Resume</a>
+            <a class="icon" href="#">GitHub</a>
+            <a class="icon" href="#">LinkedIn</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <div class="grid">
+      <main class="card projects" id="projects">
+        <h3>Selected projects</h3>
+
+        <div class="project">
+          <div style="display:flex;justify-content:space-between;align-items:center">
+            <div style="font-weight:700">Smart Curriculum Activity & Attendance App</div>
+            <div style="font-size:0.85rem;color:var(--muted)">React • Node • FaceID • Geo</div>
+          </div>
+          <p style="margin:8px 0;color:var(--muted)">Geofencing + geotagging attendance system with facial recognition for secure automated attendance and activity tracking.</p>
+          <div style="font-size:0.85rem;color:var(--muted)">Role: Frontend developer — implemented UI, integrated face auth and map flows.</div>
+        </div>
+
+        <div class="project">
+          <div style="display:flex;justify-content:space-between;align-items:center">
+            <div style="font-weight:700">PaperChain — blockchain proof of ownership</div>
+            <div style="font-size:0.85rem;color:var(--muted)">Solidity • ethers.js • React</div>
+          </div>
+          <p style="margin:8px 0;color:var(--muted)">A lightweight dApp to notarize documents on-chain for tamper-proof verification.</p>
+          <div style="font-size:0.85rem;color:var(--muted)">Role: Full‑stack contributor — smart contracts + frontend integration.</div>
+        </div>
+
+        <div class="project">
+          <div style="display:flex;justify-content:space-between;align-items:center">
+            <div style="font-weight:700">AttendancePro — College attendance manager</div>
+            <div style="font-size:0.85rem;color:var(--muted)">React • Express • MongoDB</div>
+          </div>
+          <p style="margin:8px 0;color:var(--muted)">Student-friendly attendance tracking app with reports and CSV export.</p>
+          <div style="font-size:0.85rem;color:var(--muted)">Role: Solo project — designed app + built backend APIs.</div>
+        </div>
+
+      </main>
+
+      <aside class="card" style="height:fit-content">
+        <section id="about">
+          <h4 style="margin-top:0">About me</h4>
+          <p class="small" style="color:var(--muted)">I am a computer science student building web apps. Currently focusing on mastering React, MERN and then exploring AI/ML. I like clean UI, performant code and learning new stacks.</p>
+        </section>
+
+        <section id="skills" style="margin-top:14px">
+          <h4 style="margin-bottom:8px">Skills</h4>
+          <div class="skills">
+            <div class="skill">HTML</div>
+            <div class="skill">CSS</div>
+            <div class="skill">JavaScript</div>
+            <div class="skill">React</div>
+            <div class="skill">Node.js</div>
+            <div class="skill">Express</div>
+            <div class="skill">MongoDB</div>
+            <div class="skill">Git</div>
+            <div class="skill">Solidity</div>
+          </div>
+        </section>
+
+        <section style="margin-top:14px">
+          <h4 style="margin-bottom:8px">Education</h4>
+          <div style="color:var(--muted)">Pursuing B.Tech — Computer Science</div>
+        </section>
+
+        <section id="contact" style="margin-top:14px">
+          <h4 style="margin-bottom:8px">Contact</h4>
+          <div class="small" style="color:var(--muted)">Email: <a href="mailto:parth@example.com">parth@example.com</a></div>
+          <div style="margin-top:10px">
+            <a class="btn" href="mailto:parth@example.com?subject=Contact%20from%20Portfolio">Email me</a>
+          </div>
+        </section>
+      </aside>
+    </div>
+
+    <footer>
+      Built with ❤️ — Parth Patel · <span style="color:var(--muted)">© <span id="year"></span></span>
+    </footer>
+  </div>
+
+  <script>
+    document.getElementById('year').textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>
